@@ -1,0 +1,18 @@
+{
+  "overwrite": true,
+  "generates": {
+    "models/shopify.model.ts": {
+      "schema": [
+        {
+          "https://dream-tree-shop.myshopify.com/api/graphql": {
+            "headers": {
+              "X-Shopify-Storefront-Access-Token": "5e6cb1f1377a3391a44e5ced8f313030"
+            }
+          }
+        }
+      ],
+      "documents": "services/**/*.{ts,tsx}",
+      "plugins": ["typescript", "typescript-operations"]
+    }
+  }
+}
